@@ -77,8 +77,8 @@ app.post('/register', (req, res) => {
 	
 })
 
-app.listen(3003, () => {
-	console.log('App is running on 3003');
+app.listen(process.env.PORT || 3003, () => {
+	console.log(`App is running ${process.env.port}`);
 })
 
 // profile route
