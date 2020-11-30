@@ -21,7 +21,7 @@ const postgres = require('knex')({
 postgres.select('*').from('users').then(data => console.log(data));
 
 app.get('/', (req, res) => {
-	res.send(database.users);
+	res.send('app is working');
 })
 
 // signin route 
